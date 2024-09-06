@@ -1,0 +1,26 @@
+﻿Estimate summary
+Upfront cost,Monthly cost,Total 12 months cost,Currency
+0,8735.55,104826.60,USD
+,,* Includes upfront cost
+
+
+Detailed Estimate
+Group hierarchy,Region,Description,Service,Upfront,Monthly,First 12 months total,Currency,Status,Configuration summary
+My Estimate,US East (N. Virginia),,VPN Connection,0,0,0.00,USD,,Working days per month (22)
+My Estimate,US East (N. Virginia),webservers ,Amazon EC2 ,0,874.832,10497.98,USD,,"Tenancy (Shared Instances), Operating system (Linux), Workload (Consistent, Number of instances: 8), Advance EC2 instance (t3a.2xlarge), Pricing strategy ( 3yr  No Upfront), Enable monitoring (disabled), DT Inbound: Not selected (0 TB per month), DT Outbound: Not selected (0 TB per month), DT Intra-Region: (0 TB per month)"
+My Estimate,US East (N. Virginia),application server ,Amazon EC2 ,0,723.576,8682.91,USD,,"Tenancy (Shared Instances), Operating system (Linux), Workload (Consistent, Number of instances: 6), Advance EC2 instance (t3.2xlarge), Pricing strategy ( 3yr  No Upfront), Enable monitoring (disabled), DT Inbound: Not selected (0 TB per month), DT Outbound: Not selected (0 TB per month), DT Intra-Region: (0 TB per month)"
+My Estimate,US East (N. Virginia),master database ,Amazon RDS for MySQL,0,3533.3999999999996,42400.80,USD,,"Storage amount (1000 GB), Storage for each RDS instance (General Purpose SSD (gp2)), Nodes (2), Instance type (db.r5.2xlarge), Utilization (On-Demand only) (100 %Utilized/Month), Deployment option (Multi-AZ), Pricing strategy (OnDemand), Additional backup storage (1000 GB)"
+My Estimate,US East (Ohio),replica,Amazon RDS for MySQL,0,1814.1999999999998,21770.40,USD,,"Storage amount (1000 GB), Storage for each RDS instance (General Purpose SSD (gp2)), Nodes (1), Instance type (db.r5.2xlarge), Utilization (On-Demand only) (100 %Utilized/Month), Deployment option (Multi-AZ), Pricing strategy (OnDemand), Additional backup storage (1000 GB)"
+My Estimate,US East (N. Virginia),application loadbalancer,Application Load Balancer,0,711.75,8541.00,USD,,Number of Application Load Balancers (6)
+My Estimate,US East (N. Virginia),webserver loadbalancer ,Network Load Balancer,0,492.75,5913.00,USD,,"Number of Network Load Balancers (6), Processed bytes per NLB for TCP (5 GB per hour), Average number of new TCP connections (5 per second), Average TCP connection duration (5 seconds), Processed bytes per NLB for UDP (5 GB per hour), Average number of new UDP Flows (5 per second), Average UDP Flow duration (5 seconds), Processed bytes per NLB for TLS (5 GB per hour), Average number of new TLS connections (10 per second), Average TLS connection duration (1 seconds)"
+My Estimate,US East (N. Virginia),s3Storage,S3 Standard,0,55.4,664.80,USD,,"S3 Standard storage (1000 GB per month), PUT, COPY, POST, LIST requests to S3 Standard (1000000), GET, SELECT, and all other requests from S3 Standard (1000000), Data returned by S3 Select (10000 GB per month), Data scanned by S3 Select (10000 GB per month)"
+My Estimate,US East (N. Virginia),s3Storage,S3 Glacier Flexible Retrieval,0,3.63,43.56,USD,,"S3 Glacier Flexible Retrieval Average Object Size (16 MB), Provisioned Capacity Units (0), null (0), S3 Glacier Flexible Retrieval storage (1000 GB per month), PUT, COPY, POST, LIST requests to S3 Glacier Flexible Retrieval (100), Lifecycle Transitions into S3 Glacier Flexible Retrieval (100), Restore requests (Standard) (100)"
+My Estimate,US East (N. Virginia),s3Storage,S3 Glacier Deep Archive,0,0.01,0.12,USD,,"S3 Glacier Deep Archive Average Object Size (16 MB), PUT, COPY, POST, LIST requests to S3 Glacier Deep Archive (100), Lifecycle Transitions into S3 Glacier Deep Archive (100)"
+My Estimate,US East (N. Virginia),s3Storage,S3 Glacier Instant Retrieval,0,0,0.00,USD,,
+My Estimate,US East (N. Virginia),s3Storage,Data Transfer,0,0,0.00,USD,,
+My Estimate,US East (N. Virginia),,Amazon CloudFront,0,526,6312.00,USD,,"Data transfer out to internet (5000 GB per month), Data transfer out to origin (5000 GB per month), Number of requests (HTTPS) (1000000 per month)"
+
+
+
+Acknowledgement
+"* AWS Pricing Calculator provides only an estimate of your AWS fees and doesn't include any taxes that might apply. Your actual fees depend on a variety of factors, including your actual usage of AWS services."

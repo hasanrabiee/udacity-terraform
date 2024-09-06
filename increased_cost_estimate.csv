@@ -1,0 +1,26 @@
+﻿Estimate summary
+Upfront cost,Monthly cost,Total 12 months cost,Currency
+0,20408.629999999994,244903.56,USD
+,,* Includes upfront cost
+
+
+Detailed Estimate
+Group hierarchy,Region,Description,Service,Upfront,Monthly,First 12 months total,Currency,Status,Configuration summary
+My Estimate,US East (N. Virginia),,VPN Connection,0,0,0.00,USD,,Working days per month (22)
+My Estimate,US East (N. Virginia),webservers ,Amazon EC2 ,0,2901.02,34812.24,USD,,"Tenancy (Shared Instances), Operating system (Linux), Workload (Consistent, Number of instances: 10), Advance EC2 instance (m4.4xlarge), Pricing strategy ( 3yr  No Upfront), Enable monitoring (disabled), DT Inbound: Not selected (0 TB per month), DT Outbound: Not selected (0 TB per month), DT Intra-Region: (0 TB per month)"
+My Estimate,US East (N. Virginia),application server ,Amazon EC2 ,0,2901.02,34812.24,USD,,"Tenancy (Shared Instances), Operating system (Linux), Workload (Consistent, Number of instances: 10), Advance EC2 instance (m4.4xlarge), Pricing strategy ( 3yr  No Upfront), Enable monitoring (disabled), DT Inbound: Not selected (0 TB per month), DT Outbound: Not selected (0 TB per month), DT Intra-Region: (0 TB per month)"
+My Estimate,US East (N. Virginia),master database ,Amazon RDS for MySQL,0,4043.7200000000003,48524.64,USD,,"Storage amount (1000 GB), Storage for each RDS instance (General Purpose SSD (gp2)), Nodes (3), Instance type (db.m5.2xlarge), Utilization (On-Demand only) (100 %Utilized/Month), Deployment option (Multi-AZ), Pricing strategy (OnDemand), Additional backup storage (1000 GB)"
+My Estimate,US East (Ohio),replica,Amazon RDS for MySQL,0,2727.4799999999996,32729.76,USD,,"Storage amount (1000 GB), Storage for each RDS instance (General Purpose SSD (gp2)), Nodes (2), Instance type (db.m5.2xlarge), Utilization (On-Demand only) (100 %Utilized/Month), Deployment option (Multi-AZ), Pricing strategy (OnDemand), Additional backup storage (1000 GB)"
+My Estimate,US East (N. Virginia),application loadbalancer,Application Load Balancer,0,1766.6000000000001,21199.20,USD,,Number of Application Load Balancers (8)
+My Estimate,US East (N. Virginia),webserver loadbalancer ,Network Load Balancer,0,1182.6000000000001,14191.20,USD,,"Number of Network Load Balancers (8), Processed bytes per NLB for TCP (10 GB per hour), Average number of new TCP connections (10 per second), Average TCP connection duration (10 seconds), Processed bytes per NLB for UDP (10 GB per hour), Average number of new UDP Flows (10 per second), Average UDP Flow duration (10 seconds), Processed bytes per NLB for TLS (10 GB per hour), Average number of new TLS connections (10 per second), Average TLS connection duration (1 seconds)"
+My Estimate,US East (N. Virginia),s3Storage,S3 Standard,0,554,6648.00,USD,,"S3 Standard storage (10000 GB per month), PUT, COPY, POST, LIST requests to S3 Standard (10000000), GET, SELECT, and all other requests from S3 Standard (10000000), Data returned by S3 Select (100000 GB per month), Data scanned by S3 Select (100000 GB per month)"
+My Estimate,US East (N. Virginia),s3Storage,S3 Glacier Flexible Retrieval,0,36.13,433.56,USD,,"S3 Glacier Flexible Retrieval Average Object Size (160 MB), Provisioned Capacity Units (0), null (0), S3 Glacier Flexible Retrieval storage (10000 GB per month), PUT, COPY, POST, LIST requests to S3 Glacier Flexible Retrieval (1000), Lifecycle Transitions into S3 Glacier Flexible Retrieval (1000), Restore requests (Standard) (1000)"
+My Estimate,US East (N. Virginia),s3Storage,S3 Glacier Deep Archive,0,0.01,0.12,USD,,"S3 Glacier Deep Archive Average Object Size (16 MB), PUT, COPY, POST, LIST requests to S3 Glacier Deep Archive (100), Lifecycle Transitions into S3 Glacier Deep Archive (100)"
+My Estimate,US East (N. Virginia),s3Storage,S3 Glacier Instant Retrieval,0,0,0.00,USD,,
+My Estimate,US East (N. Virginia),s3Storage,Data Transfer,0,0,0.00,USD,,
+My Estimate,US East (N. Virginia),,Amazon CloudFront,0,4296.05,51552.60,USD,,"Data transfer out to internet (5000 GB per month), Data transfer out to origin (5000 GB per month), Number of requests (HTTPS) (1000000 per month), Data transfer out to internet (5000 GB per month), Data transfer out to origin (5000 GB per month), Number of requests (HTTPS) (5000 per month), Data transfer out to internet (5000 GB per month), Data transfer out to origin (5000 GB per month), Number of requests (HTTPS) (5000 per month), Data transfer out to internet (5000 GB per month), Data transfer out to origin (5000 GB per month), Number of requests (HTTPS) (5000 per month), Data transfer out to internet (5000 GB per month), Data transfer out to origin (5000 GB per month), Number of requests (HTTPS) (5000 per month), Data transfer out to internet (5000 GB per month), Data transfer out to origin (5000 GB per month), Number of requests (HTTPS) (5000 per month)"
+
+
+
+Acknowledgement
+"* AWS Pricing Calculator provides only an estimate of your AWS fees and doesn't include any taxes that might apply. Your actual fees depend on a variety of factors, including your actual usage of AWS services."
