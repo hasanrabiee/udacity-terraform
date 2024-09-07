@@ -1,0 +1,8 @@
+Reduced Budget Scenario :
+
+By reducing the capacity and performance of compute resources, costs can be lowered without removing critical components necessary for the architecture to function.
+
+
+Increased Budget Scenario :
+
+These changes focus on increasing the system's ability to handle more traffic and providing better redundancy for failover, ensuring higher availability and better performance.

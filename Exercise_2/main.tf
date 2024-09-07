@@ -1,13 +1,13 @@
 # Specify the provider
 provider "aws" {
   region = var.aws_region
-  access_key = "AKIATHJJSFQB3VBXPB5O"
-  secret_key = "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"
+  access_key = "AKIATHJJSFQB2S3CPNH3"
+  secret_key = "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"
 }
 
 # IAM Role for Lambda Function
 resource "aws_iam_role" "lambda_exec_role" {
-  name = "lambda_exec_role"
+  name = "lambda_exec_role_3"
   
   assume_role_policy = jsonencode({
     Version = "2012-10-17"
@@ -45,7 +45,7 @@ resource "aws_s3_object" "lambda_code" {
 resource "aws_lambda_function" "example_lambda" {
   function_name = var.lambda_function_name
   role          = aws_iam_role.lambda_exec_role.arn
-  handler       = "lambda.lambda_handler"
+  handler       = "greet_lambda.lambda_handler"
   runtime       = "python3.8"
   
   s3_bucket     = aws_s3_bucket.lambda_bucket.bucket
@@ -53,7 +53,7 @@ resource "aws_lambda_function" "example_lambda" {
 
   environment {
     variables = {
-      MESSAGE = "Hello from Terraform!"
+      greeting = "Hello from Terraform!"
     }
   }
 }
@@ -63,4 +63,3 @@ resource "aws_cloudwatch_log_group" "lambda_log_group" {
   name              = "/aws/lambda/${aws_lambda_function.example_lambda.function_name}"
   retention_in_days = 7
 }
-
