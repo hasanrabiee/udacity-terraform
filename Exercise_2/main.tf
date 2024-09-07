@@ -1,8 +1,7 @@
 # Specify the provider
 provider "aws" {
   region = var.aws_region
-  # access_key = "AKIATHJJSFQB2S3CPNH3"
-  # secret_key = "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"
+ 
 }
 
 # IAM Role for Lambda Function
